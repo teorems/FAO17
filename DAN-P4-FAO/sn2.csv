@@ -1,0 +1,1219 @@
+"","Zone","Année","Valeur"
+"1","Afghanistan",2013,"8.6"
+"2","Afghanistan",2014,"8.8"
+"3","Afghanistan",2015,"8.9"
+"4","Afghanistan",2016,"9.7"
+"5","Afghanistan",2017,"10.5"
+"6","Afghanistan",2018,"11.1"
+"7","Afrique du Sud",2013,"2.2"
+"8","Afrique du Sud",2014,"2.5"
+"9","Afrique du Sud",2015,"2.8"
+"10","Afrique du Sud",2016,"3"
+"11","Afrique du Sud",2017,"3.1"
+"12","Afrique du Sud",2018,"3.3"
+"13","Albanie",2013,"0.1"
+"14","Albanie",2014,"0.1"
+"15","Albanie",2015,"0.1"
+"16","Albanie",2016,"0.1"
+"17","Albanie",2017,"0.1"
+"18","Albanie",2018,"0.1"
+"19","Algérie",2013,"1.3"
+"20","Algérie",2014,"1.3"
+"21","Algérie",2015,"1.3"
+"22","Algérie",2016,"1.3"
+"23","Algérie",2017,"1.3"
+"24","Algérie",2018,"1.2"
+"25","Allemagne",2013,NA
+"26","Allemagne",2014,NA
+"27","Allemagne",2015,NA
+"28","Allemagne",2016,NA
+"29","Allemagne",2017,NA
+"30","Allemagne",2018,NA
+"31","Andorre",2013,NA
+"32","Andorre",2014,NA
+"33","Andorre",2015,NA
+"34","Andorre",2016,NA
+"35","Andorre",2017,NA
+"36","Andorre",2018,NA
+"37","Angola",2013,"7.6"
+"38","Angola",2014,"6.2"
+"39","Angola",2015,"5.3"
+"40","Angola",2016,"5.6"
+"41","Angola",2017,"5.8"
+"42","Angola",2018,"5.7"
+"43","Antigua-et-Barbuda",2013,NA
+"44","Antigua-et-Barbuda",2014,NA
+"45","Antigua-et-Barbuda",2015,NA
+"46","Antigua-et-Barbuda",2016,NA
+"47","Antigua-et-Barbuda",2017,NA
+"48","Antigua-et-Barbuda",2018,NA
+"49","Arabie saoudite",2013,"1.5"
+"50","Arabie saoudite",2014,"1.5"
+"51","Arabie saoudite",2015,"1.5"
+"52","Arabie saoudite",2016,"1.5"
+"53","Arabie saoudite",2017,"1.6"
+"54","Arabie saoudite",2018,"1.6"
+"55","Argentine",2013,"1.2"
+"56","Argentine",2014,NA
+"57","Argentine",2015,"1.1"
+"58","Argentine",2016,"1.3"
+"59","Argentine",2017,"1.5"
+"60","Argentine",2018,"1.7"
+"61","Arménie",2013,"<0.1"
+"62","Arménie",2014,"<0.1"
+"63","Arménie",2015,"<0.1"
+"64","Arménie",2016,"<0.1"
+"65","Arménie",2017,"<0.1"
+"66","Arménie",2018,"<0.1"
+"67","Australie",2013,NA
+"68","Australie",2014,NA
+"69","Australie",2015,NA
+"70","Australie",2016,NA
+"71","Australie",2017,NA
+"72","Australie",2018,NA
+"73","Autriche",2013,NA
+"74","Autriche",2014,NA
+"75","Autriche",2015,NA
+"76","Autriche",2016,NA
+"77","Autriche",2017,NA
+"78","Autriche",2018,NA
+"79","Azerbaïdjan",2013,NA
+"80","Azerbaïdjan",2014,NA
+"81","Azerbaïdjan",2015,NA
+"82","Azerbaïdjan",2016,NA
+"83","Azerbaïdjan",2017,NA
+"84","Azerbaïdjan",2018,NA
+"85","Bahamas",2013,NA
+"86","Bahamas",2014,NA
+"87","Bahamas",2015,NA
+"88","Bahamas",2016,NA
+"89","Bahamas",2017,NA
+"90","Bahamas",2018,NA
+"91","Bahreïn",2013,NA
+"92","Bahreïn",2014,NA
+"93","Bahreïn",2015,NA
+"94","Bahreïn",2016,NA
+"95","Bahreïn",2017,NA
+"96","Bahreïn",2018,NA
+"97","Bangladesh",2013,"21.7"
+"98","Bangladesh",2014,"22.4"
+"99","Bangladesh",2015,"23.3"
+"100","Bangladesh",2016,"22.3"
+"101","Bangladesh",2017,"21.5"
+"102","Bangladesh",2018,"20.9"
+"103","Barbade",2013,"<0.1"
+"104","Barbade",2014,"<0.1"
+"105","Barbade",2015,"<0.1"
+"106","Barbade",2016,"<0.1"
+"107","Barbade",2017,"<0.1"
+"108","Barbade",2018,"<0.1"
+"109","Bélarus",2013,NA
+"110","Bélarus",2014,NA
+"111","Bélarus",2015,NA
+"112","Bélarus",2016,NA
+"113","Bélarus",2017,NA
+"114","Bélarus",2018,NA
+"115","Belgique",2013,NA
+"116","Belgique",2014,NA
+"117","Belgique",2015,NA
+"118","Belgique",2016,NA
+"119","Belgique",2017,NA
+"120","Belgique",2018,NA
+"121","Belize",2013,"<0.1"
+"122","Belize",2014,"<0.1"
+"123","Belize",2015,"<0.1"
+"124","Belize",2016,"<0.1"
+"125","Belize",2017,"<0.1"
+"126","Belize",2018,"<0.1"
+"127","Bénin",2013,"0.8"
+"128","Bénin",2014,"0.8"
+"129","Bénin",2015,"0.8"
+"130","Bénin",2016,"0.8"
+"131","Bénin",2017,"0.8"
+"132","Bénin",2018,"0.8"
+"133","Bermudes",2013,NA
+"134","Bermudes",2014,NA
+"135","Bermudes",2015,NA
+"136","Bermudes",2016,NA
+"137","Bermudes",2017,NA
+"138","Bermudes",2018,NA
+"139","Bhoutan",2013,NA
+"140","Bhoutan",2014,NA
+"141","Bhoutan",2015,NA
+"142","Bhoutan",2016,NA
+"143","Bhoutan",2017,NA
+"144","Bhoutan",2018,NA
+"145","Bolivie (État plurinational de)",2013,"2"
+"146","Bolivie (État plurinational de)",2014,"1.9"
+"147","Bolivie (État plurinational de)",2015,"1.8"
+"148","Bolivie (État plurinational de)",2016,"1.7"
+"149","Bolivie (État plurinational de)",2017,"1.7"
+"150","Bolivie (État plurinational de)",2018,"1.8"
+"151","Bosnie-Herzégovine",2013,NA
+"152","Bosnie-Herzégovine",2014,NA
+"153","Bosnie-Herzégovine",2015,NA
+"154","Bosnie-Herzégovine",2016,NA
+"155","Bosnie-Herzégovine",2017,NA
+"156","Bosnie-Herzégovine",2018,NA
+"157","Botswana",2013,"0.4"
+"158","Botswana",2014,"0.4"
+"159","Botswana",2015,"0.4"
+"160","Botswana",2016,"0.4"
+"161","Botswana",2017,"0.5"
+"162","Botswana",2018,"0.5"
+"163","Brésil",2013,NA
+"164","Brésil",2014,NA
+"165","Brésil",2015,NA
+"166","Brésil",2016,NA
+"167","Brésil",2017,NA
+"168","Brésil",2018,NA
+"169","Brunéi Darussalam",2013,NA
+"170","Brunéi Darussalam",2014,NA
+"171","Brunéi Darussalam",2015,NA
+"172","Brunéi Darussalam",2016,NA
+"173","Brunéi Darussalam",2017,NA
+"174","Brunéi Darussalam",2018,NA
+"175","Bulgarie",2013,"0.3"
+"176","Bulgarie",2014,"0.3"
+"177","Bulgarie",2015,"0.2"
+"178","Bulgarie",2016,"0.2"
+"179","Bulgarie",2017,"0.2"
+"180","Bulgarie",2018,"0.2"
+"181","Burkina Faso",2013,"3.1"
+"182","Burkina Faso",2014,"3.1"
+"183","Burkina Faso",2015,"3.2"
+"184","Burkina Faso",2016,"3.4"
+"185","Burkina Faso",2017,"3.6"
+"186","Burkina Faso",2018,"3.8"
+"187","Burundi",2013,NA
+"188","Burundi",2014,NA
+"189","Burundi",2015,NA
+"190","Burundi",2016,NA
+"191","Burundi",2017,NA
+"192","Burundi",2018,NA
+"193","Cabo Verde",2013,"<0.1"
+"194","Cabo Verde",2014,"<0.1"
+"195","Cabo Verde",2015,"<0.1"
+"196","Cabo Verde",2016,"<0.1"
+"197","Cabo Verde",2017,"<0.1"
+"198","Cabo Verde",2018,"0.1"
+"199","Cambodge",2013,"2.1"
+"200","Cambodge",2014,"2.3"
+"201","Cambodge",2015,"2.4"
+"202","Cambodge",2016,"2.4"
+"203","Cambodge",2017,"2.4"
+"204","Cambodge",2018,"2.4"
+"205","Cameroun",2013,"1.5"
+"206","Cameroun",2014,"1.5"
+"207","Cameroun",2015,"1.6"
+"208","Cameroun",2016,"1.6"
+"209","Cameroun",2017,"1.6"
+"210","Cameroun",2018,"1.6"
+"211","Canada",2013,NA
+"212","Canada",2014,NA
+"213","Canada",2015,NA
+"214","Canada",2016,NA
+"215","Canada",2017,NA
+"216","Canada",2018,NA
+"217","Chili",2013,"0.6"
+"218","Chili",2014,"0.6"
+"219","Chili",2015,"0.6"
+"220","Chili",2016,"0.6"
+"221","Chili",2017,"0.6"
+"222","Chili",2018,"0.7"
+"223","Chine - RAS de Hong-Kong",2013,NA
+"224","Chine - RAS de Hong-Kong",2014,NA
+"225","Chine - RAS de Hong-Kong",2015,NA
+"226","Chine - RAS de Hong-Kong",2016,NA
+"227","Chine - RAS de Hong-Kong",2017,NA
+"228","Chine - RAS de Hong-Kong",2018,NA
+"229","Chine - RAS de Macao",2013,"<0.1"
+"230","Chine - RAS de Macao",2014,"<0.1"
+"231","Chine - RAS de Macao",2015,"<0.1"
+"232","Chine - RAS de Macao",2016,"<0.1"
+"233","Chine - RAS de Macao",2017,"<0.1"
+"234","Chine - RAS de Macao",2018,"<0.1"
+"235","Chine, continentale",2013,NA
+"236","Chine, continentale",2014,NA
+"237","Chine, continentale",2015,NA
+"238","Chine, continentale",2016,NA
+"239","Chine, continentale",2017,NA
+"240","Chine, continentale",2018,NA
+"241","Chine, Taiwan Province de",2013,"0.9"
+"242","Chine, Taiwan Province de",2014,"0.9"
+"243","Chine, Taiwan Province de",2015,"0.9"
+"244","Chine, Taiwan Province de",2016,"0.9"
+"245","Chine, Taiwan Province de",2017,"0.9"
+"246","Chine, Taiwan Province de",2018,"0.8"
+"247","Chypre",2013,"<0.1"
+"248","Chypre",2014,"<0.1"
+"249","Chypre",2015,"<0.1"
+"250","Chypre",2016,"<0.1"
+"251","Chypre",2017,"<0.1"
+"252","Chypre",2018,"<0.1"
+"253","Colombie",2013,"3.9"
+"254","Colombie",2014,"3.4"
+"255","Colombie",2015,"3.1"
+"256","Colombie",2016,"2.8"
+"257","Colombie",2017,"2.7"
+"258","Colombie",2018,"2.7"
+"259","Comores",2013,NA
+"260","Comores",2014,NA
+"261","Comores",2015,NA
+"262","Comores",2016,NA
+"263","Comores",2017,NA
+"264","Comores",2018,NA
+"265","Congo",2013,"1.4"
+"266","Congo",2014,"1.2"
+"267","Congo",2015,"1.2"
+"268","Congo",2016,"1.3"
+"269","Congo",2017,"1.4"
+"270","Congo",2018,"1.5"
+"271","Costa Rica",2013,"0.2"
+"272","Costa Rica",2014,"0.2"
+"273","Costa Rica",2015,"0.2"
+"274","Costa Rica",2016,"0.2"
+"275","Costa Rica",2017,"0.2"
+"276","Costa Rica",2018,"0.2"
+"277","Côte d'Ivoire",2013,"4.8"
+"278","Côte d'Ivoire",2014,"4.6"
+"279","Côte d'Ivoire",2015,"4.6"
+"280","Côte d'Ivoire",2016,"4.6"
+"281","Côte d'Ivoire",2017,"4.9"
+"282","Côte d'Ivoire",2018,"5"
+"283","Croatie",2013,NA
+"284","Croatie",2014,NA
+"285","Croatie",2015,NA
+"286","Croatie",2016,NA
+"287","Croatie",2017,NA
+"288","Croatie",2018,NA
+"289","Cuba",2013,NA
+"290","Cuba",2014,NA
+"291","Cuba",2015,NA
+"292","Cuba",2016,NA
+"293","Cuba",2017,NA
+"294","Cuba",2018,NA
+"295","Danemark",2013,NA
+"296","Danemark",2014,NA
+"297","Danemark",2015,NA
+"298","Danemark",2016,NA
+"299","Danemark",2017,NA
+"300","Danemark",2018,NA
+"301","Djibouti",2013,NA
+"302","Djibouti",2014,NA
+"303","Djibouti",2015,NA
+"304","Djibouti",2016,NA
+"305","Djibouti",2017,NA
+"306","Djibouti",2018,NA
+"307","Dominique",2013,"<0.1"
+"308","Dominique",2014,"<0.1"
+"309","Dominique",2015,"<0.1"
+"310","Dominique",2016,"<0.1"
+"311","Dominique",2017,"<0.1"
+"312","Dominique",2018,"<0.1"
+"313","Égypte",2013,"4.4"
+"314","Égypte",2014,"4.3"
+"315","Égypte",2015,"4.2"
+"316","Égypte",2016,"4.5"
+"317","Égypte",2017,"4.6"
+"318","Égypte",2018,"4.6"
+"319","El Salvador",2013,"0.7"
+"320","El Salvador",2014,"0.7"
+"321","El Salvador",2015,"0.7"
+"322","El Salvador",2016,"0.6"
+"323","El Salvador",2017,"0.6"
+"324","El Salvador",2018,"0.6"
+"325","Émirats arabes unis",2013,"0.3"
+"326","Émirats arabes unis",2014,"0.3"
+"327","Émirats arabes unis",2015,"0.3"
+"328","Émirats arabes unis",2016,"0.3"
+"329","Émirats arabes unis",2017,"0.3"
+"330","Émirats arabes unis",2018,"0.3"
+"331","Équateur",2013,"2.3"
+"332","Équateur",2014,"1.9"
+"333","Équateur",2015,"1.4"
+"334","Équateur",2016,"1.5"
+"335","Équateur",2017,"1.5"
+"336","Équateur",2018,"1.5"
+"337","Érythrée",2013,NA
+"338","Érythrée",2014,NA
+"339","Érythrée",2015,NA
+"340","Érythrée",2016,NA
+"341","Érythrée",2017,NA
+"342","Érythrée",2018,NA
+"343","Espagne",2013,NA
+"344","Espagne",2014,NA
+"345","Espagne",2015,NA
+"346","Espagne",2016,NA
+"347","Espagne",2017,NA
+"348","Espagne",2018,NA
+"349","Estonie",2013,NA
+"350","Estonie",2014,NA
+"351","Estonie",2015,NA
+"352","Estonie",2016,NA
+"353","Estonie",2017,NA
+"354","Estonie",2018,NA
+"355","Eswatini",2013,"0.1"
+"356","Eswatini",2014,"0.2"
+"357","Eswatini",2015,"0.2"
+"358","Eswatini",2016,"0.2"
+"359","Eswatini",2017,"0.2"
+"360","Eswatini",2018,"0.2"
+"361","États-Unis d'Amérique",2013,NA
+"362","États-Unis d'Amérique",2014,NA
+"363","États-Unis d'Amérique",2015,NA
+"364","États-Unis d'Amérique",2016,NA
+"365","États-Unis d'Amérique",2017,NA
+"366","États-Unis d'Amérique",2018,NA
+"367","Éthiopie",2013,"26.2"
+"368","Éthiopie",2014,"24.3"
+"369","Éthiopie",2015,"21.7"
+"370","Éthiopie",2016,"21.3"
+"371","Éthiopie",2017,"21.1"
+"372","Éthiopie",2018,"21.5"
+"373","Fédération de Russie",2013,NA
+"374","Fédération de Russie",2014,NA
+"375","Fédération de Russie",2015,NA
+"376","Fédération de Russie",2016,NA
+"377","Fédération de Russie",2017,NA
+"378","Fédération de Russie",2018,NA
+"379","Fidji",2013,"<0.1"
+"380","Fidji",2014,"<0.1"
+"381","Fidji",2015,"<0.1"
+"382","Fidji",2016,"<0.1"
+"383","Fidji",2017,"<0.1"
+"384","Fidji",2018,"<0.1"
+"385","Finlande",2013,NA
+"386","Finlande",2014,NA
+"387","Finlande",2015,NA
+"388","Finlande",2016,NA
+"389","Finlande",2017,NA
+"390","Finlande",2018,NA
+"391","France",2013,NA
+"392","France",2014,NA
+"393","France",2015,NA
+"394","France",2016,NA
+"395","France",2017,NA
+"396","France",2018,NA
+"397","Gabon",2013,"0.3"
+"398","Gabon",2014,"0.3"
+"399","Gabon",2015,"0.3"
+"400","Gabon",2016,"0.3"
+"401","Gabon",2017,"0.3"
+"402","Gabon",2018,"0.4"
+"403","Gambie",2013,"0.2"
+"404","Gambie",2014,"0.2"
+"405","Gambie",2015,"0.2"
+"406","Gambie",2016,"0.3"
+"407","Gambie",2017,"0.3"
+"408","Gambie",2018,"0.3"
+"409","Géorgie",2013,"0.2"
+"410","Géorgie",2014,"0.2"
+"411","Géorgie",2015,"0.2"
+"412","Géorgie",2016,"0.2"
+"413","Géorgie",2017,"0.3"
+"414","Géorgie",2018,"0.3"
+"415","Ghana",2013,"1.9"
+"416","Ghana",2014,"2.1"
+"417","Ghana",2015,"2.1"
+"418","Ghana",2016,"2.1"
+"419","Ghana",2017,"2"
+"420","Ghana",2018,"1.9"
+"421","Grèce",2013,NA
+"422","Grèce",2014,NA
+"423","Grèce",2015,NA
+"424","Grèce",2016,NA
+"425","Grèce",2017,NA
+"426","Grèce",2018,NA
+"427","Grenade",2013,NA
+"428","Grenade",2014,NA
+"429","Grenade",2015,NA
+"430","Grenade",2016,NA
+"431","Grenade",2017,NA
+"432","Grenade",2018,NA
+"433","Groenland",2013,NA
+"434","Groenland",2014,NA
+"435","Groenland",2015,NA
+"436","Groenland",2016,NA
+"437","Groenland",2017,NA
+"438","Groenland",2018,NA
+"439","Guatemala",2013,"2.9"
+"440","Guatemala",2014,"2.8"
+"441","Guatemala",2015,"2.8"
+"442","Guatemala",2016,"2.7"
+"443","Guatemala",2017,"2.7"
+"444","Guatemala",2018,"2.8"
+"445","Guinée",2013,NA
+"446","Guinée",2014,NA
+"447","Guinée",2015,NA
+"448","Guinée",2016,NA
+"449","Guinée",2017,NA
+"450","Guinée",2018,NA
+"451","Guinée équatoriale",2013,NA
+"452","Guinée équatoriale",2014,NA
+"453","Guinée équatoriale",2015,NA
+"454","Guinée équatoriale",2016,NA
+"455","Guinée équatoriale",2017,NA
+"456","Guinée équatoriale",2018,NA
+"457","Guinée-Bissau",2013,NA
+"458","Guinée-Bissau",2014,NA
+"459","Guinée-Bissau",2015,NA
+"460","Guinée-Bissau",2016,NA
+"461","Guinée-Bissau",2017,NA
+"462","Guinée-Bissau",2018,NA
+"463","Guyana",2013,"<0.1"
+"464","Guyana",2014,"<0.1"
+"465","Guyana",2015,"<0.1"
+"466","Guyana",2016,"<0.1"
+"467","Guyana",2017,"<0.1"
+"468","Guyana",2018,"<0.1"
+"469","Haïti",2013,"5.1"
+"470","Haïti",2014,"5.1"
+"471","Haïti",2015,"5.1"
+"472","Haïti",2016,"5.2"
+"473","Haïti",2017,"5.3"
+"474","Haïti",2018,"5.4"
+"475","Honduras",2013,"1.7"
+"476","Honduras",2014,"1.5"
+"477","Honduras",2015,"1.4"
+"478","Honduras",2016,"1.3"
+"479","Honduras",2017,"1.3"
+"480","Honduras",2018,"1.3"
+"481","Hongrie",2013,NA
+"482","Hongrie",2014,NA
+"483","Hongrie",2015,NA
+"484","Hongrie",2016,NA
+"485","Hongrie",2017,NA
+"486","Hongrie",2018,NA
+"487","Îles Cook",2013,NA
+"488","Îles Cook",2014,NA
+"489","Îles Cook",2015,NA
+"490","Îles Cook",2016,NA
+"491","Îles Cook",2017,NA
+"492","Îles Cook",2018,NA
+"493","Îles Marshall",2013,NA
+"494","Îles Marshall",2014,NA
+"495","Îles Marshall",2015,NA
+"496","Îles Marshall",2016,NA
+"497","Îles Marshall",2017,NA
+"498","Îles Marshall",2018,NA
+"499","Îles Salomon",2013,"<0.1"
+"500","Îles Salomon",2014,"<0.1"
+"501","Îles Salomon",2015,"<0.1"
+"502","Îles Salomon",2016,"<0.1"
+"503","Îles Salomon",2017,"<0.1"
+"504","Îles Salomon",2018,"<0.1"
+"505","Inde",2013,"203.8"
+"506","Inde",2014,"198.3"
+"507","Inde",2015,"193.1"
+"508","Inde",2016,"190.9"
+"509","Inde",2017,"190.1"
+"510","Inde",2018,"189.2"
+"511","Indonésie",2013,"22.4"
+"512","Indonésie",2014,"23.6"
+"513","Indonésie",2015,"24"
+"514","Indonésie",2016,"24"
+"515","Indonésie",2017,"23.6"
+"516","Indonésie",2018,"24.1"
+"517","Iran (République islamique d')",2013,"3.6"
+"518","Iran (République islamique d')",2014,"3.7"
+"519","Iran (République islamique d')",2015,"3.9"
+"520","Iran (République islamique d')",2016,"3.9"
+"521","Iran (République islamique d')",2017,"3.9"
+"522","Iran (République islamique d')",2018,"3.9"
+"523","Iraq",2013,"7.3"
+"524","Iraq",2014,"7.8"
+"525","Iraq",2015,"8.4"
+"526","Iraq",2016,"8.8"
+"527","Iraq",2017,"9"
+"528","Iraq",2018,"9.1"
+"529","Irlande",2013,NA
+"530","Irlande",2014,NA
+"531","Irlande",2015,NA
+"532","Irlande",2016,NA
+"533","Irlande",2017,NA
+"534","Irlande",2018,NA
+"535","Islande",2013,NA
+"536","Islande",2014,NA
+"537","Islande",2015,NA
+"538","Islande",2016,NA
+"539","Islande",2017,NA
+"540","Islande",2018,NA
+"541","Israël",2013,NA
+"542","Israël",2014,NA
+"543","Israël",2015,NA
+"544","Israël",2016,NA
+"545","Israël",2017,NA
+"546","Israël",2018,NA
+"547","Italie",2013,NA
+"548","Italie",2014,NA
+"549","Italie",2015,NA
+"550","Italie",2016,NA
+"551","Italie",2017,NA
+"552","Italie",2018,NA
+"553","Jamaïque",2013,"0.3"
+"554","Jamaïque",2014,"0.3"
+"555","Jamaïque",2015,"0.3"
+"556","Jamaïque",2016,"0.3"
+"557","Jamaïque",2017,"0.3"
+"558","Jamaïque",2018,"0.3"
+"559","Japon",2013,NA
+"560","Japon",2014,NA
+"561","Japon",2015,NA
+"562","Japon",2016,NA
+"563","Japon",2017,NA
+"564","Japon",2018,NA
+"565","Jordanie",2013,"0.8"
+"566","Jordanie",2014,"0.8"
+"567","Jordanie",2015,"0.8"
+"568","Jordanie",2016,"0.8"
+"569","Jordanie",2017,"0.8"
+"570","Jordanie",2018,"0.9"
+"571","Kazakhstan",2013,"0.5"
+"572","Kazakhstan",2014,NA
+"573","Kazakhstan",2015,NA
+"574","Kazakhstan",2016,NA
+"575","Kazakhstan",2017,NA
+"576","Kazakhstan",2018,NA
+"577","Kenya",2013,"10.1"
+"578","Kenya",2014,"10"
+"579","Kenya",2015,"10.7"
+"580","Kenya",2016,"11.5"
+"581","Kenya",2017,"11.9"
+"582","Kenya",2018,"11.8"
+"583","Kirghizistan",2013,"0.4"
+"584","Kirghizistan",2014,"0.4"
+"585","Kirghizistan",2015,"0.4"
+"586","Kirghizistan",2016,"0.4"
+"587","Kirghizistan",2017,"0.4"
+"588","Kirghizistan",2018,"0.4"
+"589","Kiribati",2013,"<0.1"
+"590","Kiribati",2014,"<0.1"
+"591","Kiribati",2015,"<0.1"
+"592","Kiribati",2016,"<0.1"
+"593","Kiribati",2017,"<0.1"
+"594","Kiribati",2018,"<0.1"
+"595","Koweït",2013,NA
+"596","Koweït",2014,NA
+"597","Koweït",2015,NA
+"598","Koweït",2016,NA
+"599","Koweït",2017,NA
+"600","Koweït",2018,NA
+"601","Lesotho",2013,"0.3"
+"602","Lesotho",2014,"0.5"
+"603","Lesotho",2015,"0.8"
+"604","Lesotho",2016,"0.8"
+"605","Lesotho",2017,"0.8"
+"606","Lesotho",2018,"0.7"
+"607","Lettonie",2013,NA
+"608","Lettonie",2014,NA
+"609","Lettonie",2015,NA
+"610","Lettonie",2016,NA
+"611","Lettonie",2017,NA
+"612","Lettonie",2018,NA
+"613","Liban",2013,"0.7"
+"614","Liban",2014,"0.6"
+"615","Liban",2015,"0.4"
+"616","Liban",2016,"0.4"
+"617","Liban",2017,"0.4"
+"618","Liban",2018,"0.4"
+"619","Libéria",2013,"1.5"
+"620","Libéria",2014,"1.6"
+"621","Libéria",2015,"1.7"
+"622","Libéria",2016,"1.8"
+"623","Libéria",2017,"1.8"
+"624","Libéria",2018,"1.8"
+"625","Libye",2013,NA
+"626","Libye",2014,NA
+"627","Libye",2015,NA
+"628","Libye",2016,NA
+"629","Libye",2017,NA
+"630","Libye",2018,NA
+"631","Lituanie",2013,NA
+"632","Lituanie",2014,NA
+"633","Lituanie",2015,NA
+"634","Lituanie",2016,NA
+"635","Lituanie",2017,NA
+"636","Lituanie",2018,NA
+"637","Luxembourg",2013,NA
+"638","Luxembourg",2014,NA
+"639","Luxembourg",2015,NA
+"640","Luxembourg",2016,NA
+"641","Luxembourg",2017,NA
+"642","Luxembourg",2018,NA
+"643","Macédoine du Nord",2013,"<0.1"
+"644","Macédoine du Nord",2014,"<0.1"
+"645","Macédoine du Nord",2015,"<0.1"
+"646","Macédoine du Nord",2016,"<0.1"
+"647","Macédoine du Nord",2017,"<0.1"
+"648","Macédoine du Nord",2018,"<0.1"
+"649","Madagascar",2013,"7.6"
+"650","Madagascar",2014,"8.7"
+"651","Madagascar",2015,"9.7"
+"652","Madagascar",2016,"10.3"
+"653","Madagascar",2017,"10.5"
+"654","Madagascar",2018,"11"
+"655","Malaisie",2013,"1"
+"656","Malaisie",2014,"1.1"
+"657","Malaisie",2015,"1.2"
+"658","Malaisie",2016,"1.1"
+"659","Malaisie",2017,"1"
+"660","Malaisie",2018,"0.9"
+"661","Malawi",2013,"2.7"
+"662","Malawi",2014,"2.7"
+"663","Malawi",2015,"2.9"
+"664","Malawi",2016,"2.9"
+"665","Malawi",2017,"3.3"
+"666","Malawi",2018,"3.4"
+"667","Maldives",2013,NA
+"668","Maldives",2014,NA
+"669","Maldives",2015,NA
+"670","Maldives",2016,NA
+"671","Maldives",2017,NA
+"672","Maldives",2018,NA
+"673","Mali",2013,"1.1"
+"674","Mali",2014,"1"
+"675","Mali",2015,"0.9"
+"676","Mali",2016,"0.9"
+"677","Mali",2017,"1"
+"678","Mali",2018,"1"
+"679","Malte",2013,NA
+"680","Malte",2014,NA
+"681","Malte",2015,NA
+"682","Malte",2016,NA
+"683","Malte",2017,NA
+"684","Malte",2018,NA
+"685","Maroc",2013,"1.5"
+"686","Maroc",2014,"1.4"
+"687","Maroc",2015,"1.3"
+"688","Maroc",2016,"1.3"
+"689","Maroc",2017,"1.4"
+"690","Maroc",2018,"1.6"
+"691","Maurice",2013,"<0.1"
+"692","Maurice",2014,"<0.1"
+"693","Maurice",2015,"<0.1"
+"694","Maurice",2016,"<0.1"
+"695","Maurice",2017,"<0.1"
+"696","Maurice",2018,"<0.1"
+"697","Mauritanie",2013,"0.3"
+"698","Mauritanie",2014,"0.3"
+"699","Mauritanie",2015,"0.4"
+"700","Mauritanie",2016,"0.5"
+"701","Mauritanie",2017,"0.5"
+"702","Mauritanie",2018,"0.5"
+"703","Mexique",2013,"4.9"
+"704","Mexique",2014,"5.5"
+"705","Mexique",2015,"6.8"
+"706","Mexique",2016,"7.9"
+"707","Mexique",2017,"8.4"
+"708","Mexique",2018,"9"
+"709","Micronésie (États fédérés de)",2013,NA
+"710","Micronésie (États fédérés de)",2014,NA
+"711","Micronésie (États fédérés de)",2015,NA
+"712","Micronésie (États fédérés de)",2016,NA
+"713","Micronésie (États fédérés de)",2017,NA
+"714","Micronésie (États fédérés de)",2018,NA
+"715","Mongolie",2013,"0.5"
+"716","Mongolie",2014,"0.6"
+"717","Mongolie",2015,"0.6"
+"718","Mongolie",2016,"0.6"
+"719","Mongolie",2017,"0.6"
+"720","Mongolie",2018,"0.7"
+"721","Monténégro",2013,NA
+"722","Monténégro",2014,NA
+"723","Monténégro",2015,NA
+"724","Monténégro",2016,NA
+"725","Monténégro",2017,NA
+"726","Monténégro",2018,NA
+"727","Mozambique",2013,"5.9"
+"728","Mozambique",2014,"7"
+"729","Mozambique",2015,"8.4"
+"730","Mozambique",2016,"9.2"
+"731","Mozambique",2017,"9.4"
+"732","Mozambique",2018,"9.6"
+"733","Myanmar",2013,"6.7"
+"734","Myanmar",2014,"7.1"
+"735","Myanmar",2015,"7.3"
+"736","Myanmar",2016,"7.2"
+"737","Myanmar",2017,"7.3"
+"738","Myanmar",2018,"7.6"
+"739","Namibie",2013,"0.5"
+"740","Namibie",2014,"0.4"
+"741","Namibie",2015,"0.3"
+"742","Namibie",2016,"0.3"
+"743","Namibie",2017,"0.3"
+"744","Namibie",2018,"0.4"
+"745","Nauru",2013,NA
+"746","Nauru",2014,NA
+"747","Nauru",2015,NA
+"748","Nauru",2016,NA
+"749","Nauru",2017,NA
+"750","Nauru",2018,NA
+"751","Népal",2013,"1.8"
+"752","Népal",2014,"1.7"
+"753","Népal",2015,"1.7"
+"754","Népal",2016,"1.6"
+"755","Népal",2017,"1.7"
+"756","Népal",2018,"1.7"
+"757","Nicaragua",2013,"1.1"
+"758","Nicaragua",2014,"1.2"
+"759","Nicaragua",2015,"1.2"
+"760","Nicaragua",2016,"1.1"
+"761","Nicaragua",2017,"1.1"
+"762","Nicaragua",2018,"1.1"
+"763","Niger",2013,NA
+"764","Niger",2014,NA
+"765","Niger",2015,NA
+"766","Niger",2016,NA
+"767","Niger",2017,NA
+"768","Niger",2018,NA
+"769","Nigéria",2013,"14.7"
+"770","Nigéria",2014,"17.4"
+"771","Nigéria",2015,"20.2"
+"772","Nigéria",2016,"22.2"
+"773","Nigéria",2017,"22.8"
+"774","Nigéria",2018,"24.6"
+"775","Nioué",2013,NA
+"776","Nioué",2014,NA
+"777","Nioué",2015,NA
+"778","Nioué",2016,NA
+"779","Nioué",2017,NA
+"780","Nioué",2018,NA
+"781","Norvège",2013,NA
+"782","Norvège",2014,NA
+"783","Norvège",2015,NA
+"784","Norvège",2016,NA
+"785","Norvège",2017,NA
+"786","Norvège",2018,NA
+"787","Nouvelle-Calédonie",2013,"<0.1"
+"788","Nouvelle-Calédonie",2014,"<0.1"
+"789","Nouvelle-Calédonie",2015,"<0.1"
+"790","Nouvelle-Calédonie",2016,"<0.1"
+"791","Nouvelle-Calédonie",2017,"<0.1"
+"792","Nouvelle-Calédonie",2018,"<0.1"
+"793","Nouvelle-Zélande",2013,NA
+"794","Nouvelle-Zélande",2014,NA
+"795","Nouvelle-Zélande",2015,NA
+"796","Nouvelle-Zélande",2016,NA
+"797","Nouvelle-Zélande",2017,NA
+"798","Nouvelle-Zélande",2018,NA
+"799","Oman",2013,"0.3"
+"800","Oman",2014,"0.3"
+"801","Oman",2015,"0.3"
+"802","Oman",2016,"0.4"
+"803","Oman",2017,"0.4"
+"804","Oman",2018,"0.4"
+"805","Ouganda",2013,NA
+"806","Ouganda",2014,NA
+"807","Ouganda",2015,NA
+"808","Ouganda",2016,NA
+"809","Ouganda",2017,NA
+"810","Ouganda",2018,NA
+"811","Ouzbékistan",2013,"2"
+"812","Ouzbékistan",2014,"1.4"
+"813","Ouzbékistan",2015,"0.9"
+"814","Ouzbékistan",2016,"0.9"
+"815","Ouzbékistan",2017,"0.9"
+"816","Ouzbékistan",2018,"0.8"
+"817","Pakistan",2013,"31.1"
+"818","Pakistan",2014,"28.5"
+"819","Pakistan",2015,"25.4"
+"820","Pakistan",2016,"24.6"
+"821","Pakistan",2017,"24.8"
+"822","Pakistan",2018,"26.1"
+"823","Palaos",2013,NA
+"824","Palaos",2014,NA
+"825","Palaos",2015,NA
+"826","Palaos",2016,NA
+"827","Palaos",2017,NA
+"828","Palaos",2018,NA
+"829","Palestine",2013,NA
+"830","Palestine",2014,NA
+"831","Palestine",2015,NA
+"832","Palestine",2016,NA
+"833","Palestine",2017,NA
+"834","Palestine",2018,NA
+"835","Panama",2013,"0.3"
+"836","Panama",2014,"0.3"
+"837","Panama",2015,"0.3"
+"838","Panama",2016,"0.3"
+"839","Panama",2017,"0.3"
+"840","Panama",2018,"0.3"
+"841","Papouasie-Nouvelle-Guinée",2013,NA
+"842","Papouasie-Nouvelle-Guinée",2014,NA
+"843","Papouasie-Nouvelle-Guinée",2015,NA
+"844","Papouasie-Nouvelle-Guinée",2016,NA
+"845","Papouasie-Nouvelle-Guinée",2017,NA
+"846","Papouasie-Nouvelle-Guinée",2018,NA
+"847","Paraguay",2013,"0.5"
+"848","Paraguay",2014,"0.5"
+"849","Paraguay",2015,"0.5"
+"850","Paraguay",2016,"0.6"
+"851","Paraguay",2017,"0.6"
+"852","Paraguay",2018,"0.6"
+"853","Pays-Bas",2013,NA
+"854","Pays-Bas",2014,NA
+"855","Pays-Bas",2015,NA
+"856","Pays-Bas",2016,NA
+"857","Pays-Bas",2017,NA
+"858","Pays-Bas",2018,NA
+"859","Pérou",2013,"1.7"
+"860","Pérou",2014,"1.8"
+"861","Pérou",2015,"2"
+"862","Pérou",2016,"2.1"
+"863","Pérou",2017,"2.2"
+"864","Pérou",2018,"2.2"
+"865","Philippines",2013,"14.5"
+"866","Philippines",2014,"15.4"
+"867","Philippines",2015,"16.5"
+"868","Philippines",2016,"15.8"
+"869","Philippines",2017,"15.7"
+"870","Philippines",2018,"15.4"
+"871","Pologne",2013,NA
+"872","Pologne",2014,NA
+"873","Pologne",2015,NA
+"874","Pologne",2016,NA
+"875","Pologne",2017,NA
+"876","Pologne",2018,NA
+"877","Polynésie française",2013,"<0.1"
+"878","Polynésie française",2014,"<0.1"
+"879","Polynésie française",2015,"<0.1"
+"880","Polynésie française",2016,"<0.1"
+"881","Polynésie française",2017,"<0.1"
+"882","Polynésie française",2018,"<0.1"
+"883","Porto Rico",2013,NA
+"884","Porto Rico",2014,NA
+"885","Porto Rico",2015,NA
+"886","Porto Rico",2016,NA
+"887","Porto Rico",2017,NA
+"888","Porto Rico",2018,NA
+"889","Portugal",2013,NA
+"890","Portugal",2014,NA
+"891","Portugal",2015,NA
+"892","Portugal",2016,NA
+"893","Portugal",2017,NA
+"894","Portugal",2018,NA
+"895","Qatar",2013,NA
+"896","Qatar",2014,NA
+"897","Qatar",2015,NA
+"898","Qatar",2016,NA
+"899","Qatar",2017,NA
+"900","Qatar",2018,NA
+"901","République arabe syrienne",2013,NA
+"902","République arabe syrienne",2014,NA
+"903","République arabe syrienne",2015,NA
+"904","République arabe syrienne",2016,NA
+"905","République arabe syrienne",2017,NA
+"906","République arabe syrienne",2018,NA
+"907","République centrafricaine",2013,NA
+"908","République centrafricaine",2014,NA
+"909","République centrafricaine",2015,NA
+"910","République centrafricaine",2016,NA
+"911","République centrafricaine",2017,NA
+"912","République centrafricaine",2018,NA
+"913","République de Corée",2013,NA
+"914","République de Corée",2014,NA
+"915","République de Corée",2015,NA
+"916","République de Corée",2016,NA
+"917","République de Corée",2017,NA
+"918","République de Corée",2018,NA
+"919","République de Moldova",2013,NA
+"920","République de Moldova",2014,NA
+"921","République de Moldova",2015,NA
+"922","République de Moldova",2016,NA
+"923","République de Moldova",2017,NA
+"924","République de Moldova",2018,NA
+"925","République démocratique du Congo",2013,NA
+"926","République démocratique du Congo",2014,NA
+"927","République démocratique du Congo",2015,NA
+"928","République démocratique du Congo",2016,NA
+"929","République démocratique du Congo",2017,NA
+"930","République démocratique du Congo",2018,NA
+"931","République démocratique populaire lao",2013,NA
+"932","République démocratique populaire lao",2014,NA
+"933","République démocratique populaire lao",2015,NA
+"934","République démocratique populaire lao",2016,NA
+"935","République démocratique populaire lao",2017,NA
+"936","République démocratique populaire lao",2018,NA
+"937","République dominicaine",2013,"0.9"
+"938","République dominicaine",2014,"0.9"
+"939","République dominicaine",2015,"0.8"
+"940","République dominicaine",2016,"0.7"
+"941","République dominicaine",2017,"0.6"
+"942","République dominicaine",2018,"0.6"
+"943","République populaire démocratique de Corée",2013,"10.3"
+"944","République populaire démocratique de Corée",2014,"10.8"
+"945","République populaire démocratique de Corée",2015,"11.2"
+"946","République populaire démocratique de Corée",2016,"11.6"
+"947","République populaire démocratique de Corée",2017,"12"
+"948","République populaire démocratique de Corée",2018,"12.2"
+"949","République-Unie de Tanzanie",2013,"13.5"
+"950","République-Unie de Tanzanie",2014,"13.2"
+"951","République-Unie de Tanzanie",2015,"12.8"
+"952","République-Unie de Tanzanie",2016,"13"
+"953","République-Unie de Tanzanie",2017,"13.4"
+"954","République-Unie de Tanzanie",2018,"14.1"
+"955","Roumanie",2013,NA
+"956","Roumanie",2014,NA
+"957","Roumanie",2015,NA
+"958","Roumanie",2016,NA
+"959","Roumanie",2017,NA
+"960","Roumanie",2018,NA
+"961","Royaume-Uni de Grande-Bretagne et d'Irlande du Nord",2013,NA
+"962","Royaume-Uni de Grande-Bretagne et d'Irlande du Nord",2014,NA
+"963","Royaume-Uni de Grande-Bretagne et d'Irlande du Nord",2015,NA
+"964","Royaume-Uni de Grande-Bretagne et d'Irlande du Nord",2016,NA
+"965","Royaume-Uni de Grande-Bretagne et d'Irlande du Nord",2017,NA
+"966","Royaume-Uni de Grande-Bretagne et d'Irlande du Nord",2018,NA
+"967","Rwanda",2013,"2.8"
+"968","Rwanda",2014,"3.3"
+"969","Rwanda",2015,"3.9"
+"970","Rwanda",2016,"4.1"
+"971","Rwanda",2017,"4.2"
+"972","Rwanda",2018,"4.4"
+"973","Sainte-Lucie",2013,NA
+"974","Sainte-Lucie",2014,NA
+"975","Sainte-Lucie",2015,NA
+"976","Sainte-Lucie",2016,NA
+"977","Sainte-Lucie",2017,NA
+"978","Sainte-Lucie",2018,NA
+"979","Saint-Kitts-et-Nevis",2013,NA
+"980","Saint-Kitts-et-Nevis",2014,NA
+"981","Saint-Kitts-et-Nevis",2015,NA
+"982","Saint-Kitts-et-Nevis",2016,NA
+"983","Saint-Kitts-et-Nevis",2017,NA
+"984","Saint-Kitts-et-Nevis",2018,NA
+"985","Saint-Vincent-et-les Grenadines",2013,"<0.1"
+"986","Saint-Vincent-et-les Grenadines",2014,"<0.1"
+"987","Saint-Vincent-et-les Grenadines",2015,"<0.1"
+"988","Saint-Vincent-et-les Grenadines",2016,"<0.1"
+"989","Saint-Vincent-et-les Grenadines",2017,"<0.1"
+"990","Saint-Vincent-et-les Grenadines",2018,"<0.1"
+"991","Samoa",2013,NA
+"992","Samoa",2014,"<0.1"
+"993","Samoa",2015,NA
+"994","Samoa",2016,NA
+"995","Samoa",2017,NA
+"996","Samoa",2018,NA
+"997","Samoa américaines",2013,NA
+"998","Samoa américaines",2014,NA
+"999","Samoa américaines",2015,NA
+"1000","Samoa américaines",2016,NA
+"1001","Samoa américaines",2017,NA
+"1002","Samoa américaines",2018,NA
+"1003","Sao Tomé-et-Principe",2013,"<0.1"
+"1004","Sao Tomé-et-Principe",2014,"<0.1"
+"1005","Sao Tomé-et-Principe",2015,"<0.1"
+"1006","Sao Tomé-et-Principe",2016,"<0.1"
+"1007","Sao Tomé-et-Principe",2017,"<0.1"
+"1008","Sao Tomé-et-Principe",2018,"<0.1"
+"1009","Sénégal",2013,"1.4"
+"1010","Sénégal",2014,"1.6"
+"1011","Sénégal",2015,"1.7"
+"1012","Sénégal",2016,"1.5"
+"1013","Sénégal",2017,"1.5"
+"1014","Sénégal",2018,"1.5"
+"1015","Serbie",2013,"0.3"
+"1016","Serbie",2014,"0.3"
+"1017","Serbie",2015,"0.4"
+"1018","Serbie",2016,"0.4"
+"1019","Serbie",2017,"0.4"
+"1020","Serbie",2018,"0.4"
+"1021","Seychelles",2013,NA
+"1022","Seychelles",2014,NA
+"1023","Seychelles",2015,NA
+"1024","Seychelles",2016,NA
+"1025","Seychelles",2017,NA
+"1026","Seychelles",2018,NA
+"1027","Sierra Leone",2013,"2.2"
+"1028","Sierra Leone",2014,"2.1"
+"1029","Sierra Leone",2015,"2"
+"1030","Sierra Leone",2016,"2"
+"1031","Sierra Leone",2017,"2"
+"1032","Sierra Leone",2018,"2"
+"1033","Singapour",2013,NA
+"1034","Singapour",2014,NA
+"1035","Singapour",2015,NA
+"1036","Singapour",2016,NA
+"1037","Singapour",2017,NA
+"1038","Singapour",2018,NA
+"1039","Slovaquie",2013,"0.2"
+"1040","Slovaquie",2014,"0.3"
+"1041","Slovaquie",2015,"0.3"
+"1042","Slovaquie",2016,"0.4"
+"1043","Slovaquie",2017,"0.3"
+"1044","Slovaquie",2018,"0.3"
+"1045","Slovénie",2013,NA
+"1046","Slovénie",2014,NA
+"1047","Slovénie",2015,NA
+"1048","Slovénie",2016,NA
+"1049","Slovénie",2017,NA
+"1050","Slovénie",2018,NA
+"1051","Somalie",2013,NA
+"1052","Somalie",2014,NA
+"1053","Somalie",2015,NA
+"1054","Somalie",2016,NA
+"1055","Somalie",2017,NA
+"1056","Somalie",2018,NA
+"1057","Soudan",2013,"5.9"
+"1058","Soudan",2014,"5.1"
+"1059","Soudan",2015,"4.4"
+"1060","Soudan",2016,"4.8"
+"1061","Soudan",2017,"5"
+"1062","Soudan",2018,"5.2"
+"1063","Soudan du Sud",2013,NA
+"1064","Soudan du Sud",2014,NA
+"1065","Soudan du Sud",2015,NA
+"1066","Soudan du Sud",2016,NA
+"1067","Soudan du Sud",2017,NA
+"1068","Soudan du Sud",2018,NA
+"1069","Sri Lanka",2013,"1.8"
+"1070","Sri Lanka",2014,"1.8"
+"1071","Sri Lanka",2015,"1.8"
+"1072","Sri Lanka",2016,"1.7"
+"1073","Sri Lanka",2017,"1.6"
+"1074","Sri Lanka",2018,"1.6"
+"1075","Suède",2013,NA
+"1076","Suède",2014,NA
+"1077","Suède",2015,NA
+"1078","Suède",2016,NA
+"1079","Suède",2017,NA
+"1080","Suède",2018,NA
+"1081","Suisse",2013,NA
+"1082","Suisse",2014,NA
+"1083","Suisse",2015,NA
+"1084","Suisse",2016,NA
+"1085","Suisse",2017,NA
+"1086","Suisse",2018,NA
+"1087","Suriname",2013,"<0.1"
+"1088","Suriname",2014,"<0.1"
+"1089","Suriname",2015,"<0.1"
+"1090","Suriname",2016,"<0.1"
+"1091","Suriname",2017,"<0.1"
+"1092","Suriname",2018,"<0.1"
+"1093","Tadjikistan",2013,NA
+"1094","Tadjikistan",2014,NA
+"1095","Tadjikistan",2015,NA
+"1096","Tadjikistan",2016,NA
+"1097","Tadjikistan",2017,NA
+"1098","Tadjikistan",2018,NA
+"1099","Tchad",2013,"4.9"
+"1100","Tchad",2014,"5"
+"1101","Tchad",2015,"5"
+"1102","Tchad",2016,"5.3"
+"1103","Tchad",2017,"5.7"
+"1104","Tchad",2018,"6.1"
+"1105","Tchéquie",2013,NA
+"1106","Tchéquie",2014,NA
+"1107","Tchéquie",2015,NA
+"1108","Tchéquie",2016,NA
+"1109","Tchéquie",2017,NA
+"1110","Tchéquie",2018,NA
+"1111","Thaïlande",2013,"6.2"
+"1112","Thaïlande",2014,"6"
+"1113","Thaïlande",2015,"5.9"
+"1114","Thaïlande",2016,"6"
+"1115","Thaïlande",2017,"6.2"
+"1116","Thaïlande",2018,"6.5"
+"1117","Timor-Leste",2013,"0.4"
+"1118","Timor-Leste",2014,"0.4"
+"1119","Timor-Leste",2015,"0.4"
+"1120","Timor-Leste",2016,"0.4"
+"1121","Timor-Leste",2017,"0.4"
+"1122","Timor-Leste",2018,"0.4"
+"1123","Togo",2013,"1.5"
+"1124","Togo",2014,"1.5"
+"1125","Togo",2015,"1.6"
+"1126","Togo",2016,"1.6"
+"1127","Togo",2017,"1.6"
+"1128","Togo",2018,"1.6"
+"1129","Tokélaou",2013,NA
+"1130","Tokélaou",2014,NA
+"1131","Tokélaou",2015,NA
+"1132","Tokélaou",2016,NA
+"1133","Tokélaou",2017,NA
+"1134","Tokélaou",2018,NA
+"1135","Tonga",2013,NA
+"1136","Tonga",2014,NA
+"1137","Tonga",2015,NA
+"1138","Tonga",2016,NA
+"1139","Tonga",2017,NA
+"1140","Tonga",2018,NA
+"1141","Trinité-et-Tobago",2013,"<0.1"
+"1142","Trinité-et-Tobago",2014,"<0.1"
+"1143","Trinité-et-Tobago",2015,"<0.1"
+"1144","Trinité-et-Tobago",2016,"<0.1"
+"1145","Trinité-et-Tobago",2017,"<0.1"
+"1146","Trinité-et-Tobago",2018,"<0.1"
+"1147","Tunisie",2013,"0.3"
+"1148","Tunisie",2014,"0.3"
+"1149","Tunisie",2015,NA
+"1150","Tunisie",2016,NA
+"1151","Tunisie",2017,NA
+"1152","Tunisie",2018,NA
+"1153","Turkménistan",2013,"0.3"
+"1154","Turkménistan",2014,"0.2"
+"1155","Turkménistan",2015,"0.2"
+"1156","Turkménistan",2016,"0.2"
+"1157","Turkménistan",2017,"0.2"
+"1158","Turkménistan",2018,"0.2"
+"1159","Turquie",2013,NA
+"1160","Turquie",2014,NA
+"1161","Turquie",2015,NA
+"1162","Turquie",2016,NA
+"1163","Turquie",2017,NA
+"1164","Turquie",2018,NA
+"1165","Tuvalu",2013,NA
+"1166","Tuvalu",2014,NA
+"1167","Tuvalu",2015,NA
+"1168","Tuvalu",2016,NA
+"1169","Tuvalu",2017,NA
+"1170","Tuvalu",2018,NA
+"1171","Ukraine",2013,NA
+"1172","Ukraine",2014,NA
+"1173","Ukraine",2015,"1.3"
+"1174","Ukraine",2016,NA
+"1175","Ukraine",2017,"1.5"
+"1176","Ukraine",2018,"1.6"
+"1177","Uruguay",2013,NA
+"1178","Uruguay",2014,NA
+"1179","Uruguay",2015,NA
+"1180","Uruguay",2016,NA
+"1181","Uruguay",2017,NA
+"1182","Uruguay",2018,NA
+"1183","Vanuatu",2013,"<0.1"
+"1184","Vanuatu",2014,"<0.1"
+"1185","Vanuatu",2015,"<0.1"
+"1186","Vanuatu",2016,"<0.1"
+"1187","Vanuatu",2017,"<0.1"
+"1188","Vanuatu",2018,"<0.1"
+"1189","Venezuela (République bolivarienne du)",2013,"1.4"
+"1190","Venezuela (République bolivarienne du)",2014,"2.6"
+"1191","Venezuela (République bolivarienne du)",2015,"4.2"
+"1192","Venezuela (République bolivarienne du)",2016,"6.2"
+"1193","Venezuela (République bolivarienne du)",2017,"8"
+"1194","Venezuela (République bolivarienne du)",2018,"9.1"
+"1195","Viet Nam",2013,"8.9"
+"1196","Viet Nam",2014,"8.3"
+"1197","Viet Nam",2015,"7.6"
+"1198","Viet Nam",2016,"7.1"
+"1199","Viet Nam",2017,"6.5"
+"1200","Viet Nam",2018,"6.1"
+"1201","Yémen",2013,NA
+"1202","Yémen",2014,NA
+"1203","Yémen",2015,NA
+"1204","Yémen",2016,NA
+"1205","Yémen",2017,NA
+"1206","Yémen",2018,NA
+"1207","Zambie",2013,NA
+"1208","Zambie",2014,NA
+"1209","Zambie",2015,NA
+"1210","Zambie",2016,NA
+"1211","Zambie",2017,NA
+"1212","Zambie",2018,NA
+"1213","Zimbabwe",2013,NA
+"1214","Zimbabwe",2014,NA
+"1215","Zimbabwe",2015,NA
+"1216","Zimbabwe",2016,NA
+"1217","Zimbabwe",2017,NA
+"1218","Zimbabwe",2018,NA

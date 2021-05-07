@@ -1,0 +1,358 @@
+---
+title: "Analyse des données FAO 2017"
+author: "Emmanuel Messori"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r data, message=FALSE, warning=FALSE}
+library(data.table)
+library(dplyr)
+library(ggplot2)
+library(knitr)
+require(tidymodels)
+
+```
+
+## Chargement des données
+
+```{r message=FALSE}
+aa <- fread("DAN-P4-FAO/aide_alimentaire.csv", encoding = 'UTF-8', colClasses = c('character', 'integer', 'character', 'numeric' ))
+da <- fread("DAN-P4-FAO/dispo_alimentaire.csv", encoding = 'UTF-8')
+pop <-fread("DAN-P4-FAO/population.csv", encoding = 'UTF-8')
+sn <- fread("DAN-P4-FAO/sous_nutrition.csv", encoding = 'UTF-8', colClasses = c(Année = 'factor'), na.strings = "")
+
+```
+
+
+## Nettoyage
+
+Dans la table `sn` sont présents des intervalles d'années, dont la chiffre correspondante dans la colonne `Valeur` correspond à la moyennes sur les trois années, on peut donc résumer ces intervalles par l'année centrale (e.g. 2012-2014 -> 2013):
+
+```{r}
+levels(sn$Année) = c(2013,2014,2015,2016,2017,2018)
+sn[, Année := as.numeric(as.character(Année))]
+
+```
+
+On est obligé a substituer les valeurs <0.1 par de NA en absence de données plus précises.
+Même si on gardait la valeur 0.1 cela pourrait fausser le taux de malnutrition calculé pour des pays avec populations
+du même ordre (~ 100.000).
+
+```{r}
+#20 lignes avec valeurs '<0.1'
+sn[Valeur == '<0.1' & Année == 2017, .N,Zone]
+sn[, Valeur:= as.numeric(ifelse(Valeur == '<0.1', NA ,Valeur))]
+```
+
+
+## Données pour l'année 2017 :
+
+Nous allons joindre les table `sn17` et `pop17` qui contiennent les valeurs de population et nombre de personnes en état de malnutrition pour l'année 2017. Dans le dataframe ainsi obtenu, nous allons renommer le colonnes et convertir  la population en millions:
+
+```{r}
+sn17 = sn[Année == 2017]          
+pop17 = pop[Année == 2017, .(Zone, Année, Pop = Valeur*1000)]
+sn_pop_17 = sn17[pop17, on = .(Zone)][,.(Zone, Année, Pop, Pmaln = Valeur*10^6)]
+sn_pop_17
+```
+
+
+### Taux de malnutrition globale:
+
+```{r}
+mal_glob <-
+  sn_pop_17 %>% summarise(
+    popglob17 = sum(Pop),
+    totpopmaln. = sum(Pmaln, na.rm = TRUE),
+    Taux.maln.glob = percent(sum(Pmaln, na.rm = TRUE) / sum(Pop))
+  )
+
+kable(
+  mal_glob,
+  col.names = c(
+    'Pop. mondiale',
+    'Total de personnes en état de malnutrition',
+    'Taux de malnutrition global'
+  ),
+  align = c('c', 'c', 'c')
+)
+
+```
+
+
+
+###	Proportion de personnes en état de sous-nutrition par pays
+
+``` {r tables_sousnut}
+prop_sous_nut = sn_pop_17[!is.na(Pmaln), .(`Taux de malnutrition` = Pmaln / Pop, Pmaln) , Zone] %>% arrange(desc(`Taux de malnutrition`)) %>% head(20)
+
+prop_sous_nut %>% mutate(`Taux de malnutrition` = percent(`Taux de malnutrition`)) %>% kable(col.names = c('Zone','Taux de malnutrition', 'Population totale malnourrie'), align=c('lcr'))
+
+```
+ 
+
+
+### Nombre théorique de personnes qui pourraient être nourries 
+
+
+La disponibilité totales de calories par jour pour chaque produit on peut l'obtenir avec la relation suivante : **kcaltot = Disp alim (kcal/pr/jour) x pop**.
+
+ 2366 kcal/jour est le besoin moyen estimé en kcal entre hommes et femmes, calculé sur une mediane d'age de 29.8 (https://www.worldometers.info/world-population/, https://www.webmd.com/diet/features/estimated-calorie-requirement).
+
+```{r da_pop, echo=FALSE}
+da_pop = pop17[da, on = 'Zone'][, `kcaltot/jour` := `Disponibilité alimentaire (Kcal/personne/jour)` * Pop]
+poptot_2017 = sum(pop17$Pop)
+ntheorique1 = da_pop[, .(ntheorique = sum(`kcaltot/jour`, na.rm = TRUE) / 2366)]
+```
+
+  
+  Avec la disponibilité alimentaire globale on pourrait nourrir **`r format(ntheorique1,bigmark =" ", digits=10)`** personnes, c'est à dire le **`r format(ntheorique1/poptot_2017 *100,digits = 3, nsmall=2)`%** de la population mondiale en 2017.
+  
+  
+  
+- Nombre théorique de personnes qui pourraient être nourries a partir de produits végétaux:
+
+```{r echo=FALSE}
+ntheorique2 = da_pop[Origine=='vegetale', .(ntheorique2= sum(`kcaltot/jour`, na.rm=TRUE) / 2366)]
+```
+
+Les seuls produits végétaux pourraient nourrir **`r format(ntheorique2,bigmark =" ", digits=10)`**, c'est à dir le **`r format(ntheorique2/poptot_2017 * 100,digits = 3, nsmall=2)`**% de la population mondiale en 2017.
+
+
+
+###	Utilisation mondiale de la disponibilité intérieure
+
+En particulier la part qui est attribuée à l'alimentation animale, celle qui est perdue et celle qui est concrètement utilisée pour l'alimentation humaine.
+
+On peut vérifier la relation suivante : **Disponibilité intérieure d'un aliment**= *Nourr. + Pertes + Semences + Traitement + Aliments animaux + Autres Utilisations = Production + Importation - Exportation + Stock*
+
+```{r}
+setnafill(da, cols = 4:length(da), fill = 0)
+da[, dtot := Production - `Exportations - Quantité` + `Importations - Quantité` + `Variation de stock`]
+da[, dtot2 := Nourriture + Pertes + Semences + Traitement + `Aliments pour animaux` + `Autres Utilisations`]
+da[1:50 , dtot - `Disponibilité intérieure`]
+
+da[1:50, dtot2 - `Disponibilité intérieure`]
+
+```
+Pour certains pays il y a une légère différence entre en `dt1` et `dt2`, les deux totaux calculés, et le total déclaré dans la colonne Disponibilité intérieure ( cela est du probablement aux valeurs manquantes).
+
+
+```{r}
+di <- da %>%
+  summarise(
+    prop_nourriture = sum(Nourriture) / sum(`Disponibilité intérieure`),
+    prop_pertes = sum(Pertes) / sum(`Disponibilité intérieure`),
+    prop_alim_anim = sum(`Aliments pour animaux`) / sum(`Disponibilité intérieure`),
+    prop_semences = sum(Semences) / sum(`Disponibilité intérieure`),
+    prop_traitement = sum(Traitement) / sum(`Disponibilité intérieure`),
+    prop_autres = sum(`Autres Utilisations`) / sum(`Disponibilité intérieure`)
+  )
+
+ggplot(gather(di), aes(x="", y=value, fill= key)) + geom_col( width=1, color="white") + labs(x = 'Usage aliments', y='Proportion') + coord_polar("y", start=0) + theme_void() + geom_text(aes(label = percent(value)), position = position_stack(vjust=0.5)) +
+  labs(title = 'Utilisation globale des produits alimentaires', x = NULL, y = NULL, fill = NULL)  + scale_fill_brewer(type="div", palette=1)
+
+di[, 1:3] %>% mutate_all(percent, accuracy = 0.01) %>% kable(
+  caption = 'Utilisation de la disponibilité intérieure mondiale',
+  col.names = c('Nourriture', 'Pertes', 'Alimentation animale'),
+  align = c('ccc'
+  ))
+
+
+```
+
+
+Il faudra remarquer que la production alimentaire d'un certain nombre de pays n'est pas du tout recensée:
+
+```{r}
+anti_join(pop17,da, by="Zone") %>% select(Zone) %>% head()
+
+```
+```{r tables_usagealim}
+tabledi <- da %>%  group_by(Zone) %>%
+  summarise(
+    prop_nourriture = sum(Nourriture, na.rm = TRUE) / sum(`Disponibilité intérieure`, na.rm =
+                                                            TRUE),
+    prop_pertes = sum(Pertes, na.rm = TRUE) / sum(`Disponibilité intérieure`, na.rm = TRUE),
+    prop_alim_anim = sum(`Aliments pour animaux`, na.rm = TRUE) /
+      sum(`Disponibilité intérieure`, na.rm = TRUE)
+  ) %>% left_join(prop_sous_nut, by = "Zone")  %>% arrange(desc(`Taux de malnutrition`)) %>% head(20)
+
+tabledi[1:5] %>% mutate(across(!Zone, percent, accuracy = 0.01)) %>% kable(
+  caption = 'Utilisation des aliments des pays plus touchés par la malnutrition ',
+  col.names = c(
+    'Pays',
+    'Nourriture',
+    'Pertes',
+    'Alim. Animaux',
+    'Taux de malnutrition'
+  ),
+  align = c('lcccr')
+)
+```
+
+Le pays le plus touchés par le problème de la malnutrition utilisent souvent la plupart des ressources alimentaires pour la nourriture humaine.
+
+
+### Utilisation mondiale des céreales
+
+```{r}
+cereales = c(
+  "Blé",
+  "Céréales, Autres" ,
+  "Orge",
+  "Riz (Eq Blanchi)",
+  "Avoine" ,
+  "Sorgho",
+  "Maïs",
+  "Millet",
+  "Seigle"
+)
+
+da_cer_glob <- da %>% filter(Produit %in% cereales) %>% summarise(
+  prop_nourriture = sum(Nourriture) / sum(`Disponibilité intérieure`),
+  prop_alimanim = sum(`Aliments pour animaux`) / sum(`Disponibilité intérieure`), prop_semences = sum(Semences) / sum(`Disponibilité intérieure`),
+    prop_traitement = sum(Traitement) / sum(`Disponibilité intérieure`),
+    prop_autres = sum(`Autres Utilisations`) / sum(`Disponibilité intérieure`))
+  
+ggplot(gather(da_cer_glob), aes(x="", y=value, fill= key)) + geom_col(width=1, color="white") + labs(x = 'Usage aliments', y='Proportion') + coord_polar("y", start=0) + theme_void() + geom_text(aes(label = percent(value)), position = position_stack(vjust=0.5)) +
+  labs(title = 'Utilisation globale des céréales', x = NULL, y = NULL, fill = NULL)  + scale_fill_brewer(type="div", palette=1)
+
+da_cer_glob[1:2] %>% mutate_all(percent) %>% kable(
+  caption = 'Utilisation globale des céreales',
+  col.names = c('Nourriture', 'Alimentation animale'),
+  align = c('cc')
+)
+```
+
+On remarque que plus qu'un troisième de la production mondiale en céréales est destinée a l'alimentation animale.
+
+### Usage des céréales par type
+
+```{r tables_cer}
+usage_cer <-
+  da %>% filter(Produit %in% cereales) %>% group_by(Produit) %>% summarise(
+    prop_nourriture = sum(Nourriture, na.rm = TRUE) / sum(`Disponibilité intérieure`, na.rm =
+                                                            TRUE),
+    prop_alimanim = sum(`Aliments pour animaux`, na.rm = TRUE) / sum(`Disponibilité intérieure`, na.rm =
+                                                                       TRUE)
+  ) %>% arrange(desc(prop_nourriture))
+
+
+usage_cer %>% mutate(across(where(is.numeric), percent)) %>% kable(
+  caption = "Usage des céréales par type",
+  col.names = c('Produit', 'Nourriture', 'Alimentation animale')
+)
+```
+Seulement riz, millet et blé sont utilisés en prévalence pour l'alimentation humaine, les autres céréales étant destinés en priorité à l'alimentation animale.
+
+### Usage des céréales par Pays
+
+```{r tables_usagecer}
+
+da_cer <-
+  da %>%  filter(Produit %in% cereales) %>% group_by(Zone) %>%
+  summarise(
+    prop_nourriture = sum(Nourriture, na.rm = TRUE) / sum(`Disponibilité intérieure`, na.rm =
+                                                            TRUE),
+    prop_alimanim = sum(`Aliments pour animaux`, na.rm = TRUE) /
+      sum(`Disponibilité intérieure`, na.rm = TRUE)
+  ) %>% inner_join(prop_sous_nut, by = "Zone") %>% arrange(desc(`Taux de malnutrition`)) %>% head(20)
+
+da_cer[1:4] %>% mutate(across(!Zone, percent)) %>% kable(
+  caption = 'Usage des cereales par Pays',
+  col.names = c(
+    'Pays',
+    'Nourriture',
+    'Alimentation animale',
+    'Taux de Malnutrition'
+  ),
+  align = c('l', 'c', 'c', 'c')
+)
+
+
+```
+
+
+
+On remarque encore plus la relation entre taux de malnutrition et utilisation des aliments pour la nourriture.
+
+### Production de Manioc en Thaïlande
+
+La Thaïlande pourrait résoudre le problème de la sous-nutrition en réduisant l'exportation du manioc, qui constitue l'83% de la production du pays:
+
+```{r tables_man}
+mt <-
+  da_pop %>% filter(Produit == 'Manioc' &
+                      Zone == 'Thaïlande') %>% select(
+                        Zone,
+                        Production,
+                        `Disponibilité intérieure`,
+                        Nourriture,
+                        `Importations - Quantité`,
+                        `Exportations - Quantité`,
+                        `Variation de stock`
+                      )
+
+kable(mt)
+```
+
+
+
+
+### Pays ayant beneficié le plus d'aides
+
+
+```{r tables_at-pays}
+at_pays <-
+  aa %>% group_by(`Pays bénéficiaire`) %>% summarise(`Aides Totales` = sum(Valeur)) %>%
+  arrange(desc(`Aides Totales`)) %>% left_join(prop_sous_nut, by = c(`Pays bénéficiaire` = "Zone")) %>% left_join(pop17, by =
+                                                                                                                    c(`Pays bénéficiaire` = 'Zone')) %>% select(c(1, 2, 3, 4))
+
+at_pays %>% rename(`Population totale malnourrie` = Pmaln) %>% mutate(`Taux de malnutrition` = percent(`Taux de malnutrition`)) %>% head(20) %>% kable(align = c('lcccc'))
+
+pakistan <-
+  at_pays %>% filter(`Pays bénéficiaire` == 'Pakistan') %>% select(`Aides Totales`)
+bangladesh <-
+  at_pays %>% filter(`Pays bénéficiaire` == 'Bangladesh') %>% select(`Aides Totales`)
+ethiopie <-
+  at_pays %>% filter(`Pays bénéficiaire` == 'Éthiopie') %>% select(`Aides Totales`)
+```
+
+La Syrie est la première dans la liste de bénéficiaires des aides humanitaires, même si on ne peut pas comparer cette donnée  a la population totale malnourrie. On remarquera aussi que la distribution a un right skew assez prononcé (le 90% de pays on reçu moins de 290590.0 Tonnes totales).Bien qu'ils aient un chiffre similaire sur la population souffrant de malnutrition (ou plus grande), les aides totales reçus par le Bangladesh et le Pakistan representent les deux moins d'un quart des aides a l'Ethiopie. Il faudra aussi remarquer que pour beaucoup de pays (Inde, Indonésie, Nigéria ..) qui présentent une chiffre importante de personnes en état de malnutrition les aides ne sont pas recensés.
+
+```{r message=FALSE, warning=FALSE}
+
+
+noaides <-
+  left_join(sn, aa, by = c("Zone" = "Pays bénéficiaire")) %>% group_by(Zone) %>% summarise(PopM = mean(Valeur.x), Aidetot = sum(Valeur.y)) %>% arrange(desc(PopM)) %>% filter(is.na(Aidetot)) %>% head(10)
+
+kable(
+  noaides,
+  caption = 'Aides non recensés',
+  col.names = c('Zone', 'Population totale malnourrie', 'Aides totales')
+)
+
+```
+
+
+### Disponibilité en kcal/personne/jour par pays
+
+```{r tables_dakcaljour}
+da_jour <- da_pop %>% group_by(Zone) %>%
+  summarise(
+    `Dispotot(kcal/jour)` = sum(`Disponibilité alimentaire (Kcal/personne/jour)`, na.rm =
+                                  TRUE)
+  ) %>% arrange(`Dispotot(kcal/jour)`)  %>% left_join(prop_sous_nut, by =
+                                                        "Zone") %>% head(20)
+
+da_jour %>% mutate(`Taux de malnutrition` = percent(`Taux de malnutrition`)) %>% kable(align =
+                                                                                         c('lcr'))
+```
+
+En absence des données sur la population totale malnourrie, qui permettent de calculer le taux de malnutrition, la disponibilité en calorie journalières est un bon indicateur des conditions alimentaires. Les pays de hémisphère sud, en particulier de l'Afrique centrale (avec le Madagascar), de l'Amérique du Sud (Haïti en premier), du Moyen Orient, la Corée du Nord, l'Inde sont les plus touchés.
